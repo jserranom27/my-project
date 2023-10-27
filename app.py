@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-car_data = pd.read_csv('C:\\Users\\Jefferson Serrano\Downloads\\vehicles_us.csv.crdownload') # leer los datos
+car_data = pd.read_csv('datasets/vehicles_us.csv') # leer los datos
 hist_button = st.button('Construir histograma') # crear un botón de creacion de histograma
 dist_button = st.button('contruir grafico de dispersion')
         
@@ -24,3 +24,6 @@ elif dist_button: # hacer click en este boton
 
         #mostrar grafico de dispersion
         st.plotly_chart(fig1, use_container_width=True)
+
+# %%
+# 
